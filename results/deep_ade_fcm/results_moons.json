@@ -1,0 +1,60 @@
+[
+  {
+    "run": 0,
+    "model": "ADE-FCM",
+    "silhouette": 0.4943,
+    "ari": 0.1833,
+    "n_clusters": 11
+  },
+  {
+    "run": 1,
+    "model": "ADE-FCM",
+    "silhouette": 0.5064,
+    "ari": 0.2047,
+    "n_clusters": 10
+  },
+  {
+    "model": "DeepADEFCM (latent=2)",
+    "n_clusters_found": 14,
+    "silhouette": 0.521,
+    "ari": 0.1495,
+    "reconstruction_error": 0.338745,
+    "n_samples": 400,
+    "n_features": 2,
+    "latent_dim": 2,
+    "run": 0
+  },
+  {
+    "model": "DeepADEFCM (latent=2)",
+    "n_clusters_found": 14,
+    "silhouette": 0.4592,
+    "ari": 0.1079,
+    "reconstruction_error": 0.38138,
+    "n_samples": 400,
+    "n_features": 2,
+    "latent_dim": 2,
+    "run": 1
+  },
+  {
+    "model": "DeepADEFCM (latent=5)",
+    "n_clusters_found": 14,
+    "silhouette": 0.5127,
+    "ari": 0.0869,
+    "reconstruction_error": 0.460724,
+    "n_samples": 400,
+    "n_features": 2,
+    "latent_dim": 5,
+    "run": 0
+  },
+  {
+    "model": "DeepADEFCM (latent=5)",
+    "n_clusters_found": 14,
+    "silhouette": 0.4938,
+    "ari": 0.1085,
+    "reconstruction_error": 0.326657,
+    "n_samples": 400,
+    "n_features": 2,
+    "latent_dim": 5,
+    "run": 1
+  }
+]

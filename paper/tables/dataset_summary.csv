@@ -1,0 +1,8 @@
+Dataset,Samples,Features,Classes
+iris,150,4,3
+wine,178,13,3
+breast_cancer,569,30,2
+digits,1797,64,10
+glass,214,9,6
+seeds,210,7,3
+sonar,208,60,2

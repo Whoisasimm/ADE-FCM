@@ -1,0 +1,230 @@
+name: ADE-FCM Research Pipeline
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      experiment_name:
+        description: Experiment name
+        type: string
+        default: "weekly-benchmark"
+      datasets:
+        description: Comma-separated datasets to run
+        type: string
+        default: "synthetic,adverse-effects,clinical-trials"
+      generate_paper:
+        description: Compile LaTeX paper
+        type: boolean
+        default: true
+
+env:
+  PYTHON_VERSION: "3.9"
+  MLFLOW_TRACKING_URI: "http://mlflow:5000"
+  MLFLOW_EXPERIMENT_NAME: "ADE-FCM-Research"
+
+jobs:
+  experiments:
+    name: Run Experiments
+    runs-on: [self-hosted, linux, x64, gpu]
+    strategy:
+      matrix:
+        dataset: ${{ fromJSON(format('[ {0} ]', github.event.inputs.datasets || '"synthetic,adverse-effects,clinical-trials"')) }}
+        n_clusters: [5, 10, 20, 50]
+        fuzzifier: [1.5, 2.0, 2.5]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          pip install tensorboard mlflow psutil
+
+      - name: Run ADE-FCM experiment
+        run: |
+          python scripts/run_experiment.py \
+            --dataset ${{ matrix.dataset }} \
+            --n-clusters ${{ matrix.n_clusters }} \
+            --fuzzifier ${{ matrix.fuzzifier }} \
+            --tracking-uri ${{ env.MLFLOW_TRACKING_URI }} \
+            --experiment-name ${{ env.MLFLOW_EXPERIMENT_NAME }} \
+            --output-dir ./results/${{ matrix.dataset }}_k${{ matrix.n_clusters }}_m${{ matrix.fuzzifier }}
+
+      - name: Log experiment metrics
+        run: |
+          python scripts/log_to_mlflow.py \
+            --experiment-name ${{ env.MLFLOW_EXPERIMENT_NAME }} \
+            --run-name "${{ matrix.dataset }}_k${{ matrix.n_clusters }}_m${{ matrix.fuzzifier }}" \
+            --params "dataset=${{ matrix.dataset }},n_clusters=${{ matrix.n_clusters }},fuzzifier=${{ matrix.fuzzifier }}" \
+            --metrics-path ./results/${{ matrix.dataset }}_k${{ matrix.n_clusters }}_m${{ matrix.fuzzifier }}/metrics.json
+
+      - name: Upload experiment results
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.dataset }}-k${{ matrix.n_clusters }}-m${{ matrix.fuzzifier }}
+          path: ./results/${{ matrix.dataset }}_k${{ matrix.n_clusters }}_m${{ matrix.fuzzifier }}/
+          retention-days: 30
+
+  analyze:
+    name: Analyze Results
+    runs-on: ubuntu-latest
+    needs: experiments
+
+    steps:
+      - name: Download all experiment results
+        uses: actions/download-artifact@v4
+
+      - name: Aggregate results
+        run: |
+          python scripts/aggregate_results.py \
+            --results-dir . \
+            --output ./analysis/aggregated_results.csv
+
+      - name: Generate statistical analysis
+        run: |
+          python scripts/statistical_analysis.py \
+            --input ./analysis/aggregated_results.csv \
+            --output ./analysis/statistical_report.md
+
+      - name: Generate comparison plots
+        run: |
+          python scripts/generate_figures.py \
+            --input ./analysis/aggregated_results.csv \
+            --output-dir ./figures \
+            --format pdf
+
+      - name: Upload analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-results
+          path: |
+            ./analysis/
+            ./figures/
+
+  figures:
+    name: Generate Figures
+    runs-on: ubuntu-latest
+    needs: analyze
+
+    steps:
+      - name: Download analysis
+        uses: actions/download-artifact@v4
+        with:
+          name: analysis-results
+          path: ./analysis
+
+      - name: Generate publication-quality figures
+        run: |
+          python scripts/generate_publication_figures.py \
+            --input ./analysis/aggregated_results.csv \
+            --output-dir ./figures/publication \
+            --dpi 300 \
+            --format pdf
+
+      - name: Upload publication figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-figures
+          path: ./figures/publication/
+
+  paper:
+    name: Compile LaTeX Paper
+    runs-on: ubuntu-latest
+    needs: figures
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.generate_paper == 'true'
+
+    steps:
+      - name: Download figures
+        uses: actions/download-artifact@v4
+        with:
+          name: publication-figures
+          path: ./figures/publication
+
+      - name: Set up LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full latexmk biber
+
+      - name: Compile LaTeX
+        working-directory: ./paper
+        run: |
+          latexmk -pdf -interaction=nonstopmode main.tex
+
+      - name: Upload compiled paper
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-paper
+          path: ./paper/main.pdf
+          retention-days: 90
+
+      - name: Compile supplementary material
+        working-directory: ./paper
+        run: |
+          latexmk -pdf -interaction=nonstopmode supplementary.tex || true
+
+      - name: Upload supplementary
+        uses: actions/upload-artifact@v4
+        with:
+          name: supplementary-material
+          path: ./paper/supplementary.pdf
+          retention-days: 90
+
+  register_model:
+    name: Register Best Model
+    runs-on: ubuntu-latest
+    needs: analyze
+    if: success()
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install -e .
+          pip install mlflow boto3
+
+      - name: Find and register best model
+        run: |
+          python scripts/register_best_model.py \
+            --tracking-uri ${{ env.MLFLOW_TRACKING_URI }} \
+            --experiment-name ${{ env.MLFLOW_EXPERIMENT_NAME }} \
+            --metric silhouette_score \
+            --stage Production
+
+  notify:
+    name: Send Notification
+    runs-on: ubuntu-latest
+    needs: [experiments, analyze, figures, paper, register_model]
+    if: always()
+
+    steps:
+      - name: Check workflow status
+        id: status
+        run: |
+          echo "status=${{ needs.experiments.result == 'success' && needs.analyze.result == 'success' && 'success' || 'failure' }}" >> $GITHUB_OUTPUT
+
+      - name: Send Slack notification
+        uses: slackapi/slack-github-action@v1
+        with:
+          payload: |
+            {
+              "channel": "#ade-fcm-research",
+              "username": "Research Bot",
+              "text": "ADE-FCM Research Pipeline ${{ steps.status.outputs.status == 'success' && '✅ completed' || '❌ failed' }}. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

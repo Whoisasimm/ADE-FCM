@@ -1,0 +1,41 @@
+{
+  "full_ade_fcm": {
+    "silhouette": 0.522478201072421,
+    "davies_bouldin": 0.7307926067460015,
+    "time": 3.980968475341797,
+    "iterations": 300,
+    "objective": 2072.1530271367415,
+    "ari": 0.9946559286607272,
+    "nmi": 0.991591487539297
+  },
+  "without_adaptive_fuzzifier": {
+    "silhouette": 0.5224315753588502,
+    "davies_bouldin": 0.7308062564719582,
+    "time": 0.2582380771636963,
+    "iterations": 18
+  },
+  "without_auto_k": {
+    "silhouette": 0.522478201072421,
+    "davies_bouldin": 0.7307926067460015,
+    "time": 3.5981361865997314,
+    "iterations": 300
+  },
+  "without_explainability": {
+    "silhouette": 0.522478201072421,
+    "davies_bouldin": 0.7307926067460015,
+    "time": 3.600703716278076,
+    "iterations": 300
+  },
+  "without_outlier_robustness": {
+    "silhouette": 0.522478201072421,
+    "davies_bouldin": 0.7307926067460015,
+    "time": 3.5730936527252197,
+    "iterations": 300
+  },
+  "without_early_stopping": {
+    "silhouette": 0.522478201072421,
+    "davies_bouldin": 0.7307926067460015,
+    "time": 3.572582960128784,
+    "iterations": 300
+  }
+}

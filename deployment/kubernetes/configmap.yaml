@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ade-fcm-config
+  namespace: ade-fcm
+  labels:
+    project: ade-fcm
+data:
+  # ADE-FCM algorithm parameters
+  ADE_FCM_N_CLUSTERS: "10"
+  ADE_FCM_M: "2.0"
+  ADE_FCM_MAX_ITER: "100"
+  ADE_FCM_TOLERANCE: "0.0001"
+  ADE_FCM_ADAPTIVE_LR: "true"
+  ADE_FCM_INIT_METHOD: "kmeans++"
+  ADE_FCM_DISTANCE_METRIC: "euclidean"
+  ADE_FCM_STREAMING_WINDOW: "1000"
+  ADE_FCM_STREAMING_SLIDE: "500"
+  ADE_FCM_STREAMING_WATERMARK: "1h"
+
+  # Spark configuration
+  SPARK_MASTER: "spark://spark-master:7077"
+  SPARK_DRIVER_MEMORY: "4g"
+  SPARK_DRIVER_CORES: "2"
+  SPARK_EXECUTOR_MEMORY: "8g"
+  SPARK_EXECUTOR_CORES: "4"
+  SPARK_EXECUTOR_INSTANCES: "3"
+  SPARK_DEFAULT_PARALLELISM: "12"
+  SPARK_SQL_SHUFFLE_PARTITIONS: "12"
+  SPARK_SERIALIZER: "org.apache.spark.serializer.KryoSerializer"
+  SPARK_KRYO_REGISTRATION_REQUIRED: "false"
+  SPARK_MEMORY_OFFHEAP_ENABLED: "true"
+  SPARK_MEMORY_OFFHEAP_SIZE: "2g"
+  SPARK_DYNAMIC_ALLOCATION_ENABLED: "true"
+  SPARK_DYNAMIC_ALLOCATION_MIN_EXECUTORS: "1"
+  SPARK_DYNAMIC_ALLOCATION_MAX_EXECUTORS: "10"
+  SPARK_DYNAMIC_ALLOCATION_INITIAL_EXECUTORS: "3"
+  SPARK_SHUFFLE_SERVICE_ENABLED: "true"
+  SPARK_SQL_ADAPTIVE_EXECUTION_ENABLED: "true"
+  SPARK_SQL_ADAPTIVE_COALESCE_PARTITIONS_ENABLED: "true"
+
+  # Kafka configuration
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+  KAFKA_INPUT_TOPIC: "ade-fcm-input"
+  KAFKA_OUTPUT_TOPIC: "ade-fcm-output"
+  KAFKA_GROUP_ID: "ade-fcm-consumer"
+  KAFKA_AUTO_OFFSET_RESET: "latest"
+  KAFKA_ENABLE_AUTO_COMMIT: "false"
+
+  # MLflow configuration
+  MLFLOW_TRACKING_URI: "http://mlflow:5000"
+  MLFLOW_EXPERIMENT_NAME: "ADE-FCM"
+  MLFLOW_S3_ENDPOINT_URL: "http://minio:9000"
+
+  # Data paths
+  DATA_INPUT_PATH: "/data/input"
+  DATA_OUTPUT_PATH: "/data/output"
+  DATA_CHECKPOINT_PATH: "/data/checkpoints"
+  MODEL_SAVE_PATH: "/data/models"
+  LOG_PATH: "/data/logs"
+
+  # Logging configuration
+  LOG_LEVEL: "INFO"
+  LOG_FORMAT: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  LOG_FILE: "/data/logs/ade-fcm.log"
+  LOG_MAX_BYTES: "104857600"
+  LOG_BACKUP_COUNT: "10"

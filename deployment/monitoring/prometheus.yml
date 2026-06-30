@@ -1,0 +1,93 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+  external_labels:
+    project: ade-fcm
+    environment: production
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+rule_files:
+  - "alerts/*.yml"
+
+scrape_configs:
+  - job_name: "spark-master"
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - spark-master:8080
+        labels:
+          spark_role: master
+          project: ade-fcm
+
+  - job_name: "spark-workers"
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - spark-worker-1:8081
+          - spark-worker-2:8081
+          - spark-worker-3:8081
+        labels:
+          spark_role: worker
+          project: ade-fcm
+
+  - job_name: "spark-applications"
+    scrape_interval: 15s
+    kubernetes_sd_configs:
+      - role: pod
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+        action: keep
+        regex: true
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_port]
+        action: replace
+        target_label: __metrics_path__
+        regex: (.+)
+
+  - job_name: "jupyter"
+    scrape_interval: 30s
+    static_configs:
+      - targets:
+          - jupyter:8888
+        labels:
+          service: jupyter
+          project: ade-fcm
+
+  - job_name: "mlflow"
+    scrape_interval: 15s
+    static_configs:
+      - targets:
+          - mlflow:5000
+        labels:
+          service: mlflow
+          project: ade-fcm
+
+  - job_name: "kafka"
+    scrape_interval: 15s
+    static_configs:
+      - targets:
+          - kafka:9092
+        labels:
+          service: kafka
+          project: ade-fcm
+
+  - job_name: "node-exporter"
+    scrape_interval: 30s
+    static_configs:
+      - targets:
+          - node-exporter:9100
+        labels:
+          project: ade-fcm
+
+  - job_name: "cadvisor"
+    scrape_interval: 15s
+    static_configs:
+      - targets:
+          - cadvisor:8080
+        labels:
+          project: ade-fcm

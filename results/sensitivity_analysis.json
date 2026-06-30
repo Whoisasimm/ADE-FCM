@@ -1,0 +1,2702 @@
+[
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04977059364318848
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04729175567626953
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04143261909484863
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04313778877258301
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05268239974975586
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.06526541709899902
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05901837348937988
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04406261444091797
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04598402976989746
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04257988929748535
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043593645095825195
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.03858232498168945
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.041081905364990234
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.03922629356384277
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04292559623718262
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04516935348510742
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043884992599487305
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04384660720825195
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04440927505493164
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04622840881347656
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.049109458923339844
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04933333396911621
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.040555477142333984
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.0494844913482666
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04811239242553711
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 42,
+    "ari": 0.6302367346938775,
+    "nmi": 0.6655902882990271,
+    "silhouette": 0.4569556011408177,
+    "runtime": 0.04583883285522461
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 43,
+    "ari": 0.6302367346938775,
+    "nmi": 0.6655902882990271,
+    "silhouette": 0.4569556011408177,
+    "runtime": 0.04769611358642578
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 44,
+    "ari": 0.6302367346938775,
+    "nmi": 0.6655902882990271,
+    "silhouette": 0.4569556011408177,
+    "runtime": 0.044492244720458984
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 45,
+    "ari": 0.6302367346938775,
+    "nmi": 0.6655902882990271,
+    "silhouette": 0.4569556011408177,
+    "runtime": 0.04983782768249512
+  },
+  {
+    "dataset": "iris",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 46,
+    "ari": 0.6302367346938775,
+    "nmi": 0.665590288299027,
+    "silhouette": 0.4569556011408177,
+    "runtime": 0.03325343132019043
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.034307241439819336
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.034070730209350586
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043746232986450195
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04812002182006836
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.0557560920715332
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04481220245361328
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04608440399169922
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04971623420715332
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.038805246353149414
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.047542572021484375
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05277276039123535
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.048949241638183594
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04660153388977051
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04809856414794922
+  },
+  {
+    "dataset": "iris",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04192519187927246
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.046277523040771484
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04600977897644043
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04519963264465332
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04280400276184082
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.042699575424194336
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.0407567024230957
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043842315673828125
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04004621505737305
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.03937673568725586
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05396747589111328
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04177403450012207
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04488945007324219
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.042081356048583984
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043016672134399414
+  },
+  {
+    "dataset": "iris",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.03858613967895508
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.049196481704711914
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05111527442932129
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.0418701171875
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.028107166290283203
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04045987129211426
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.039141178131103516
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.043297767639160156
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.040622711181640625
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04879355430603027
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.04738616943359375
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.042325735092163086
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05169248580932617
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05025672912597656
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.05817246437072754
+  },
+  {
+    "dataset": "iris",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.07019639015197754
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 42,
+    "ari": 0.6201351808870379,
+    "nmi": 0.659486892724918,
+    "silhouette": 0.45994823920518635,
+    "runtime": 0.06724929809570312
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 43,
+    "ari": 0.6201351808870379,
+    "nmi": 0.659486892724918,
+    "silhouette": 0.45994823920518635,
+    "runtime": 0.059247493743896484
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 44,
+    "ari": 0.6201351808870379,
+    "nmi": 0.659486892724918,
+    "silhouette": 0.45994823920518635,
+    "runtime": 0.06036543846130371
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 45,
+    "ari": 0.6201351808870379,
+    "nmi": 0.659486892724918,
+    "silhouette": 0.45994823920518635,
+    "runtime": 0.060469865798950195
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 46,
+    "ari": 0.6201351808870379,
+    "nmi": 0.659486892724918,
+    "silhouette": 0.45994823920518635,
+    "runtime": 0.06390666961669922
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 42,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.07510876655578613
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 43,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.08495926856994629
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 44,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.08787250518798828
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 45,
+    "ari": 0.6410058621782706,
+    "nmi": 0.6728438383674812,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.07133865356445312
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 46,
+    "ari": 0.6410058621782706,
+    "nmi": 0.672843838367481,
+    "silhouette": 0.45663380641237455,
+    "runtime": 0.06537461280822754
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 42,
+    "ari": 0.6011286543750637,
+    "nmi": 0.6478741489729217,
+    "silhouette": 0.4618854545624976,
+    "runtime": 0.07049226760864258
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 43,
+    "ari": 0.6011286543750637,
+    "nmi": 0.6478741489729217,
+    "silhouette": 0.4618854545624976,
+    "runtime": 0.06689929962158203
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 44,
+    "ari": 0.4394281414597442,
+    "nmi": 0.6474642398330621,
+    "silhouette": 0.4751310555814832,
+    "runtime": 0.0442965030670166
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 45,
+    "ari": 0.6011286543750637,
+    "nmi": 0.6478741489729217,
+    "silhouette": 0.4618854545624976,
+    "runtime": 0.05608320236206055
+  },
+  {
+    "dataset": "iris",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 46,
+    "ari": 0.6011286543750637,
+    "nmi": 0.6478741489729217,
+    "silhouette": 0.4618854545624976,
+    "runtime": 0.05486798286437988
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.08948469161987305
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.07065749168395996
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06348848342895508
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06951284408569336
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06862902641296387
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05865788459777832
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0651543140411377
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06061553955078125
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.04939675331115723
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05892205238342285
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05601000785827637
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06356549263000488
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06135249137878418
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.057712554931640625
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.050508737564086914
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06722164154052734
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06920385360717773
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06525945663452148
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0639486312866211
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06495809555053711
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06940126419067383
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0881807804107666
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0689382553100586
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0674750804901123
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06536340713500977
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06207442283630371
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06650376319885254
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05901169776916504
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05739402770996094
+  },
+  {
+    "dataset": "wine",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.047852277755737305
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.07108020782470703
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06664276123046875
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0704655647277832
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06332159042358398
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06563973426818848
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06702828407287598
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.07105588912963867
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0702524185180664
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06777358055114746
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05664515495300293
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05395650863647461
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.07209920883178711
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06707882881164551
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06457686424255371
+  },
+  {
+    "dataset": "wine",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06084847450256348
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 42,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.09400224685668945
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 43,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.07489800453186035
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 44,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.06154441833496094
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 45,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.057286739349365234
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 46,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.058949947357177734
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0736088752746582
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06138300895690918
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.052712202072143555
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06895589828491211
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.1143496036529541
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0796351432800293
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.07225370407104492
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05592608451843262
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05971789360046387
+  },
+  {
+    "dataset": "wine",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0684976577758789
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06780505180358887
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0676884651184082
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05680108070373535
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.057361602783203125
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06601524353027344
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06472992897033691
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06663131713867188
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06445837020874023
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05751776695251465
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06525182723999023
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06670141220092773
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06560873985290527
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06393122673034668
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06027936935424805
+  },
+  {
+    "dataset": "wine",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06109619140625
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 42,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.05891704559326172
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 43,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.06318306922912598
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 44,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.06241130828857422
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 45,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.061237335205078125
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 46,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.04722762107849121
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 42,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0635995864868164
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 43,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.06328368186950684
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 44,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.0618586540222168
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 45,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.04676318168640137
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 46,
+    "ari": 0.9148795960669529,
+    "nmi": 0.8925851652969188,
+    "silhouette": 0.28594199657074876,
+    "runtime": 0.05698823928833008
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 42,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.061612844467163086
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 43,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.06441307067871094
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 44,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.05934715270996094
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 45,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.05884957313537598
+  },
+  {
+    "dataset": "wine",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 46,
+    "ari": 0.8974949815093207,
+    "nmi": 0.8758935341223069,
+    "silhouette": 0.2848589191898987,
+    "runtime": 0.06154966354370117
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.5638561269644934,
+    "nmi": 0.6643783518099908,
+    "silhouette": 0.13867222639559063,
+    "runtime": 1.521343469619751
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.5671953985820517,
+    "nmi": 0.663595822960857,
+    "silhouette": 0.13796974091009864,
+    "runtime": 1.5286808013916016
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6323787637893231,
+    "nmi": 0.6931142506293473,
+    "silhouette": 0.1208877202617309,
+    "runtime": 1.3639163970947266
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.5632327550510156,
+    "nmi": 0.6651208006759195,
+    "silhouette": 0.13321175694968806,
+    "runtime": 1.360727310180664
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.4811997831399443,
+    "nmi": 0.607972420097712,
+    "silhouette": 0.1309277351386008,
+    "runtime": 1.2840631008148193
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.6249919805269701,
+    "nmi": 0.6943746823547066,
+    "silhouette": 0.12226281973423295,
+    "runtime": 1.3158175945281982
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.5627074528372401,
+    "nmi": 0.6605775185981785,
+    "silhouette": 0.138170737707642,
+    "runtime": 1.2973270416259766
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.6341758122066221,
+    "nmi": 0.6963873038540603,
+    "silhouette": 0.1207715026815187,
+    "runtime": 1.2982337474822998
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.5664182659807696,
+    "nmi": 0.6619949160675073,
+    "silhouette": 0.13689992032861167,
+    "runtime": 1.2906076908111572
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.4815320111977528,
+    "nmi": 0.6073844200601982,
+    "silhouette": 0.13081883105569353,
+    "runtime": 1.2845361232757568
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 42,
+    "ari": 0.6269353977259975,
+    "nmi": 0.6956410851781257,
+    "silhouette": 0.12220207037375894,
+    "runtime": 1.3818042278289795
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 43,
+    "ari": 0.5356407641112825,
+    "nmi": 0.6451324142397152,
+    "silhouette": 0.1280229860627119,
+    "runtime": 1.3174159526824951
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 44,
+    "ari": 0.6332482208229657,
+    "nmi": 0.6958956877060288,
+    "silhouette": 0.12078050818214119,
+    "runtime": 1.309351921081543
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 45,
+    "ari": 0.5648399499153178,
+    "nmi": 0.6694515535753562,
+    "silhouette": 0.1356416285679487,
+    "runtime": 1.3330104351043701
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_max",
+    "value": 3.5,
+    "seed": 46,
+    "ari": 0.4816547072931542,
+    "nmi": 0.6069689113223817,
+    "silhouette": 0.13102004963404593,
+    "runtime": 1.3155901432037354
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 42,
+    "ari": 0.6317401033825782,
+    "nmi": 0.6991246263835661,
+    "silhouette": 0.12249202862393156,
+    "runtime": 1.342642068862915
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 43,
+    "ari": 0.5382209054317688,
+    "nmi": 0.6491466379064977,
+    "silhouette": 0.12872275181509496,
+    "runtime": 1.41463041305542
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 44,
+    "ari": 0.6389721631228155,
+    "nmi": 0.697817023735852,
+    "silhouette": 0.12130292080467667,
+    "runtime": 1.2935397624969482
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 45,
+    "ari": 0.5671252539456628,
+    "nmi": 0.6682249907537282,
+    "silhouette": 0.133911294436303,
+    "runtime": 1.3713760375976562
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.01,
+    "seed": 46,
+    "ari": 0.4826124781628586,
+    "nmi": 0.6096155476531377,
+    "silhouette": 0.13076583830248537,
+    "runtime": 1.2821917533874512
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 42,
+    "ari": 0.6225973876104118,
+    "nmi": 0.6864115214921497,
+    "silhouette": 0.11954687784155517,
+    "runtime": 1.301191806793213
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 43,
+    "ari": 0.5418040650093469,
+    "nmi": 0.6489746907012393,
+    "silhouette": 0.127296179704947,
+    "runtime": 1.3152084350585938
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 44,
+    "ari": 0.6314878975678283,
+    "nmi": 0.6880272248368303,
+    "silhouette": 0.11849986792449169,
+    "runtime": 1.3471972942352295
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 45,
+    "ari": 0.4797828530237361,
+    "nmi": 0.612611393245524,
+    "silhouette": 0.1153346081423508,
+    "runtime": 1.2858822345733643
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.3,
+    "seed": 46,
+    "ari": 0.47681028233862277,
+    "nmi": 0.5991896822270838,
+    "silhouette": 0.12715037090944745,
+    "runtime": 1.357795000076294
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 42,
+    "ari": 0.5921199859353853,
+    "nmi": 0.6633330504455599,
+    "silhouette": 0.11383395506213535,
+    "runtime": 1.3492448329925537
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 43,
+    "ari": 0.526391698577701,
+    "nmi": 0.6364334122565108,
+    "silhouette": 0.12500664056160446,
+    "runtime": 1.4980134963989258
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 44,
+    "ari": 0.625740622970825,
+    "nmi": 0.6803137273782711,
+    "silhouette": 0.11831289527211088,
+    "runtime": 1.3235359191894531
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 45,
+    "ari": 0.45952276284676774,
+    "nmi": 0.5891228375632457,
+    "silhouette": 0.10794221880747312,
+    "runtime": 1.3532400131225586
+  },
+  {
+    "dataset": "digits",
+    "parameter": "m_min",
+    "value": 1.5,
+    "seed": 46,
+    "ari": 0.47842279392112863,
+    "nmi": 0.5925702808460973,
+    "silhouette": 0.132049607199329,
+    "runtime": 1.305661678314209
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.3145802021026611
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.3464734554290771
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.3165154457092285
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.299203872680664
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.3145887851715088
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.3362696170806885
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.3663809299468994
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.314777135848999
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.4904429912567139
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.3128750324249268
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.400062084197998
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.414280652999878
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.3479259014129639
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.3112385272979736
+  },
+  {
+    "dataset": "digits",
+    "parameter": "beta",
+    "value": 10.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.2986280918121338
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 42,
+    "ari": 0.5963160962688676,
+    "nmi": 0.6673765392230196,
+    "silhouette": 0.11124131020654353,
+    "runtime": 1.300783395767212
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 43,
+    "ari": 0.5266351825675565,
+    "nmi": 0.6355872296574214,
+    "silhouette": 0.12499141387056295,
+    "runtime": 1.3993239402770996
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 44,
+    "ari": 0.6273613503160822,
+    "nmi": 0.6814075011313493,
+    "silhouette": 0.1184780798784787,
+    "runtime": 1.321821928024292
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 45,
+    "ari": 0.4603701704728104,
+    "nmi": 0.5878344291684832,
+    "silhouette": 0.10808157278857342,
+    "runtime": 1.2990097999572754
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 1.0,
+    "seed": 46,
+    "ari": 0.47868551709149704,
+    "nmi": 0.5913641211452804,
+    "silhouette": 0.1329606670433858,
+    "runtime": 1.3720488548278809
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.3004703521728516
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.35878586769104
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.3654851913452148
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.3056538105010986
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 3.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.3093743324279785
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.5646886998763905,
+    "nmi": 0.6667112891253926,
+    "silhouette": 0.13868968872249013,
+    "runtime": 1.3304150104522705
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.5382209054317688,
+    "nmi": 0.6491466379064977,
+    "silhouette": 0.12872275181509496,
+    "runtime": 1.382112979888916
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6391147012927985,
+    "nmi": 0.6974850795521904,
+    "silhouette": 0.12119915828492295,
+    "runtime": 1.3402929306030273
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.5640047327278752,
+    "nmi": 0.6672965212304292,
+    "silhouette": 0.13240525725730082,
+    "runtime": 2.018847942352295
+  },
+  {
+    "dataset": "digits",
+    "parameter": "alpha",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.48261795742733526,
+    "nmi": 0.6099229182623076,
+    "silhouette": 0.13050967431700994,
+    "runtime": 2.543776512145996
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.5590462684631348
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.6127519607543945
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.6459150314331055
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.7006700038909912
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 0.5,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.383472204208374
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.5921621322631836
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.5168275833129883
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.6213409900665283
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.7406485080718994
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 2.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.7367815971374512
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 42,
+    "ari": 0.625078350421725,
+    "nmi": 0.6949314139787097,
+    "silhouette": 0.12237863341910618,
+    "runtime": 1.667902946472168
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 43,
+    "ari": 0.5373441577197237,
+    "nmi": 0.6483592629180621,
+    "silhouette": 0.12860431255153415,
+    "runtime": 1.592198371887207
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 44,
+    "ari": 0.6359763530043882,
+    "nmi": 0.6975258945148382,
+    "silhouette": 0.12096484265461448,
+    "runtime": 1.569000244140625
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 45,
+    "ari": 0.5680005707832536,
+    "nmi": 0.6651136413683886,
+    "silhouette": 0.1350298408525511,
+    "runtime": 1.613215446472168
+  },
+  {
+    "dataset": "digits",
+    "parameter": "center_reinit_threshold",
+    "value": 5.0,
+    "seed": 46,
+    "ari": 0.4805825511750881,
+    "nmi": 0.6065306826613953,
+    "silhouette": 0.13079375242701236,
+    "runtime": 1.6089634895324707
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 42,
+    "ari": 0.5596424717022248,
+    "nmi": 0.6642895489440022,
+    "silhouette": 0.13774012693177357,
+    "runtime": 1.333111047744751
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 43,
+    "ari": 0.5285679772313775,
+    "nmi": 0.6430932135772253,
+    "silhouette": 0.12357021776629884,
+    "runtime": 1.2483131885528564
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 44,
+    "ari": 0.6242610330096863,
+    "nmi": 0.6868517541784718,
+    "silhouette": 0.12084550687914163,
+    "runtime": 1.2816593647003174
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 45,
+    "ari": 0.5638091551895104,
+    "nmi": 0.666701106588984,
+    "silhouette": 0.13285371959679532,
+    "runtime": 1.2639977931976318
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.0,
+    "seed": 46,
+    "ari": 0.4816343998916187,
+    "nmi": 0.6067835720626191,
+    "silhouette": 0.13065863559336036,
+    "runtime": 1.2295312881469727
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 42,
+    "ari": 0.6325703105089323,
+    "nmi": 0.6973779498124376,
+    "silhouette": 0.12178394415364084,
+    "runtime": 1.4881377220153809
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 43,
+    "ari": 0.5223250761299363,
+    "nmi": 0.6436834539210843,
+    "silhouette": 0.11495162901570137,
+    "runtime": 1.4578638076782227
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 44,
+    "ari": 0.641815155323117,
+    "nmi": 0.7001331585910122,
+    "silhouette": 0.12062419785290404,
+    "runtime": 1.522005558013916
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 45,
+    "ari": 0.5690692002213303,
+    "nmi": 0.6663549994714776,
+    "silhouette": 0.138089850166849,
+    "runtime": 1.5487864017486572
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.1,
+    "seed": 46,
+    "ari": 0.47916326357346056,
+    "nmi": 0.6066439815408998,
+    "silhouette": 0.1275619052648257,
+    "runtime": 1.662043809890747
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 42,
+    "ari": 0.4333267373894183,
+    "nmi": 0.5795550348519423,
+    "silhouette": 0.11882874165360066,
+    "runtime": 1.6111681461334229
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 43,
+    "ari": 0.43182551248023787,
+    "nmi": 0.5788007715595731,
+    "silhouette": 0.12182727537586921,
+    "runtime": 1.634657382965088
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 44,
+    "ari": 0.6134182820113234,
+    "nmi": 0.6811639733855412,
+    "silhouette": 0.11510525462215053,
+    "runtime": 1.523188829421997
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 45,
+    "ari": 0.442133595838405,
+    "nmi": 0.5812021300408649,
+    "silhouette": 0.11495464450804074,
+    "runtime": 1.546074628829956
+  },
+  {
+    "dataset": "digits",
+    "parameter": "outlier_contamination",
+    "value": 0.2,
+    "seed": 46,
+    "ari": 0.5524851487269057,
+    "nmi": 0.6540226555854739,
+    "silhouette": 0.13061001871303896,
+    "runtime": 1.5853002071380615
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "blobs": [
+    {
+      "run": 0,
+      "model": "ADE-FCM",
+      "silhouette": 0.6773,
+      "ari": 1.0,
+      "n_clusters": 4
+    },
+    {
+      "run": 1,
+      "model": "ADE-FCM",
+      "silhouette": 0.6773,
+      "ari": 1.0,
+      "n_clusters": 4
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 14,
+      "silhouette": 0.5315,
+      "ari": 0.4854,
+      "reconstruction_error": 0.100045,
+      "n_samples": 500,
+      "n_features": 10,
+      "latent_dim": 2,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 9,
+      "silhouette": 0.7656,
+      "ari": 0.7429,
+      "reconstruction_error": 0.095807,
+      "n_samples": 500,
+      "n_features": 10,
+      "latent_dim": 2,
+      "run": 1
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.5306,
+      "ari": 0.4511,
+      "reconstruction_error": 0.10256,
+      "n_samples": 500,
+      "n_features": 10,
+      "latent_dim": 5,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.4431,
+      "ari": 0.4177,
+      "reconstruction_error": 0.101128,
+      "n_samples": 500,
+      "n_features": 10,
+      "latent_dim": 5,
+      "run": 1
+    }
+  ],
+  "moons": [
+    {
+      "run": 0,
+      "model": "ADE-FCM",
+      "silhouette": 0.4943,
+      "ari": 0.1833,
+      "n_clusters": 11
+    },
+    {
+      "run": 1,
+      "model": "ADE-FCM",
+      "silhouette": 0.5064,
+      "ari": 0.2047,
+      "n_clusters": 10
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 14,
+      "silhouette": 0.521,
+      "ari": 0.1495,
+      "reconstruction_error": 0.338745,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 2,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 14,
+      "silhouette": 0.4592,
+      "ari": 0.1079,
+      "reconstruction_error": 0.38138,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 2,
+      "run": 1
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.5127,
+      "ari": 0.0869,
+      "reconstruction_error": 0.460724,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 5,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.4938,
+      "ari": 0.1085,
+      "reconstruction_error": 0.326657,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 5,
+      "run": 1
+    }
+  ],
+  "circles": [
+    {
+      "run": 0,
+      "model": "ADE-FCM",
+      "silhouette": 0.4656,
+      "ari": 0.1422,
+      "n_clusters": 14
+    },
+    {
+      "run": 1,
+      "model": "ADE-FCM",
+      "silhouette": 0.4651,
+      "ari": 0.1534,
+      "n_clusters": 14
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 14,
+      "silhouette": 0.5266,
+      "ari": 0.1274,
+      "reconstruction_error": 0.078342,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 2,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=2)",
+      "n_clusters_found": 14,
+      "silhouette": 0.5496,
+      "ari": 0.1896,
+      "reconstruction_error": 0.2058,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 2,
+      "run": 1
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.4389,
+      "ari": 0.2976,
+      "reconstruction_error": 0.185659,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 5,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.4762,
+      "ari": 0.1691,
+      "reconstruction_error": 0.61219,
+      "n_samples": 400,
+      "n_features": 2,
+      "latent_dim": 5,
+      "run": 1
+    }
+  ],
+  "high_dim": [
+    {
+      "run": 0,
+      "model": "ADE-FCM",
+      "silhouette": 0.5446,
+      "ari": 1.0,
+      "n_clusters": 5
+    },
+    {
+      "run": 1,
+      "model": "ADE-FCM",
+      "silhouette": 0.5446,
+      "ari": 1.0,
+      "n_clusters": 5
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.6568,
+      "ari": 0.6266,
+      "reconstruction_error": 0.196856,
+      "n_samples": 600,
+      "n_features": 50,
+      "latent_dim": 5,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=5)",
+      "n_clusters_found": 14,
+      "silhouette": 0.6403,
+      "ari": 0.607,
+      "reconstruction_error": 0.198668,
+      "n_samples": 600,
+      "n_features": 50,
+      "latent_dim": 5,
+      "run": 1
+    },
+    {
+      "model": "DeepADEFCM (latent=10)",
+      "n_clusters_found": 5,
+      "silhouette": 0.8828,
+      "ari": 0.7465,
+      "reconstruction_error": 0.316755,
+      "n_samples": 600,
+      "n_features": 50,
+      "latent_dim": 10,
+      "run": 0
+    },
+    {
+      "model": "DeepADEFCM (latent=10)",
+      "n_clusters_found": 14,
+      "silhouette": 0.7602,
+      "ari": 0.7795,
+      "reconstruction_error": 0.194573,
+      "n_samples": 600,
+      "n_features": 50,
+      "latent_dim": 10,
+      "run": 1
+    }
+  ]
+}

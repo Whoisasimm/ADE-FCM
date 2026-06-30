@@ -1,0 +1,16 @@
+Algorithm_A,Algorithm_B,Cohens_d,Interpretation
+ADE-FCM,FCLM,1.6405,Large
+FCLM,KMeans,-1.5700,Large
+FCLM,Agglomerative,-1.5551,Large
+FCM,FCLM,1.3343,Large
+DeepADEFCM,FCLM,0.8955,Large
+DeepADEFCM,KMeans,-0.6384,Medium
+ADE-FCM,DeepADEFCM,0.6231,Medium
+DeepADEFCM,Agglomerative,-0.6190,Medium
+DeepADEFCM,FCM,-0.4850,Small
+FCM,KMeans,-0.1203,Negligible
+FCM,Agglomerative,-0.1000,Negligible
+ADE-FCM,FCM,0.0780,Negligible
+ADE-FCM,KMeans,-0.0503,Negligible
+ADE-FCM,Agglomerative,-0.0277,Negligible
+KMeans,Agglomerative,0.0217,Negligible

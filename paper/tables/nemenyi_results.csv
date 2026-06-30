@@ -1,0 +1,16 @@
+Algorithm_A,Algorithm_B,p_value,Significant
+FCM,FCLM,0.1463,False
+ADE-FCM,FCLM,0.2310,False
+FCLM,KMeans,0.4289,False
+FCLM,Agglomerative,0.5699,False
+DeepADEFCM,FCM,0.6175,False
+ADE-FCM,DeepADEFCM,0.7527,False
+DeepADEFCM,KMeans,0.9181,False
+DeepADEFCM,FCLM,0.9565,False
+DeepADEFCM,Agglomerative,0.9700,False
+FCM,Agglomerative,0.9700,False
+ADE-FCM,Agglomerative,0.9929,False
+FCM,KMeans,0.9929,False
+ADE-FCM,KMeans,0.9992,False
+ADE-FCM,FCM,0.9999,False
+KMeans,Agglomerative,0.9999,False

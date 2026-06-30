@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Average Benchmark Performance Across All Datasets (mean $\pm$ std). Bold indicates best per metric.}
+\label{tab:benchmark_avg}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Algorithm & Silhouette & Ari & Nmi & Davies Bouldin & Calinski Harabasz & Execution Time \\
+\midrule
+ADE-FCM & 0.4661 $\pm$ 0.2893 & 0.4492 $\pm$ 0.2192 & 0.5035 $\pm$ 0.1743 & 1.3996 $\pm$ 1.6675 & 634.5517 $\pm$ 491.1630 & 1.8659 $\pm$ 1.0437 \\
+Agglomerative & \textbf{0.4968 $\pm$ 0.2210} & 0.5452 $\pm$ 0.2545 & 0.5934 $\pm$ 0.2667 & \textbf{0.8901 $\pm$ 0.6700} & 590.0692 $\pm$ 380.5397 & 0.0373 $\pm$ 0.0667 \\
+DBSCAN & 0.1838 $\pm$ 0.3677 & 0.1518 $\pm$ 0.3036 & 0.1877 $\pm$ 0.3754 & inf $\pm$ nan & 170.1215 $\pm$ 340.2431 & \textbf{0.0095 $\pm$ 0.0073} \\
+FCLM & 0.4431 $\pm$ 0.3310 & 0.4191 $\pm$ 0.2569 & 0.4651 $\pm$ 0.2123 & 1.1828 $\pm$ 1.2286 & 619.7057 $\pm$ 510.4663 & 0.0346 $\pm$ 0.0604 \\
+FCM & 0.4551 $\pm$ 0.3056 & 0.4323 $\pm$ 0.2415 & 0.4845 $\pm$ 0.1887 & 1.4230 $\pm$ 1.7055 & 629.1174 $\pm$ 497.8307 & 0.0155 $\pm$ 0.0213 \\
+GaussianMixture & 0.3832 $\pm$ 0.1734 & \textbf{0.7199 $\pm$ 0.1907} & \textbf{0.7270 $\pm$ 0.1612} & 1.1082 $\pm$ 0.7077 & 392.2404 $\pm$ 234.5953 & 0.1230 $\pm$ 0.1957 \\
+KMeans & 0.4961 $\pm$ 0.2234 & 0.5713 $\pm$ 0.1821 & 0.6013 $\pm$ 0.1828 & 0.9413 $\pm$ 0.7392 & 630.2937 $\pm$ 479.6615 & 0.4026 $\pm$ 0.7972 \\
+MiniBatchKMeans & 0.4891 $\pm$ 0.2263 & 0.5685 $\pm$ 0.1662 & 0.6034 $\pm$ 0.1772 & 0.9356 $\pm$ 0.7356 & \textbf{634.9805 $\pm$ 477.4925} & 0.0310 $\pm$ 0.0116 \\
+Spectral & 0.1651 $\pm$ 0.3207 & 0.1865 $\pm$ 0.3727 & 0.2046 $\pm$ 0.3956 & inf $\pm$ nan & 140.1157 $\pm$ 277.3383 & 160.5355 $\pm$ 308.7522 \\
+\bottomrule
+\end{tabular}
+\end{table}

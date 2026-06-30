@@ -1,0 +1,127 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+
+# ── Distribution ──
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── IDE / OS ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Testing & coverage ──
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# ── Notebooks ──
+.ipynb_checkpoints/
+
+# ── Type checkers ──
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# ── Secrets ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+local_settings.py
+
+# ── Large data files ──
+data/raw/
+data/external/
+datasets/
+*.csv
+!results/tables/*.csv
+!paper/tables/*.csv
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+
+# ── Model weights ──
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+saved_models/
+
+# ── Logs / temp ──
+*.log
+logs/
+tmp/
+temp/
+
+# ── Spark ──
+spark-checkpoint/
+metastore_db/
+derby.log
+spark-warehouse/
+
+# ── Experiment tracking ──
+mlruns/
+mlflow-artifacts/
+wandb/
+
+# ── Docs build ──
+docs/_build/
+site/
+
+# ── Internal reports (not user-facing) ──
+DEFENSE_PRESENTATION.md
+FINAL_RECOMMENDATIONS.md
+FINAL_RELEASE_REPORT.md
+FIX_VALIDATION_REPORT.md
+PHASE7A_VALIDATION_REPORT.md
+PORTFOLIO_SUMMARY.md
+PRESENTATION.md
+PROJECT_STORY.md
+PUBLICATION_ENHANCEMENT_REPORT.md
+PUBLICATION_READINESS_REPORT.md
+REPRODUCIBILITY_GUIDE.md
+SECURITY_AUDIT_REPORT.md
+THESIS_DRAFT.md
+PAPER_AUTHOR_PACKAGE.md
+FINAL_RESEARCH_SCORE.md
+results/audit/
+fix_diagnostics.txt
+
+# ── Generated plots ──
+plots/
+experiments/
+output/
+runs/

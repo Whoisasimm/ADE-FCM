@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: >-
+  If you use ADE-FCM in your research, please cite it using
+  the metadata below.
+type: software
+title: >-
+  ADE-FCM: An Adaptive and Explainable Fuzzy C-Means Framework
+  for Automated Clustering
+version: 1.0.0
+date-released: "2026-07-01"
+license: MIT
+url: "https://github.com/Whoisasimm/ADE-FCM"
+repository-code: "https://github.com/Whoisasimm/ADE-FCM"
+doi: ""          # Fill in after Zenodo upload
+abstract: >-
+  ADE-FCM is an adaptive and explainable fuzzy clustering framework
+  that extends classical Fuzzy C-Means through automatic cluster
+  discovery, adaptive fuzzifier scheduling, robust center estimation,
+  multiple distance metrics, and cluster-level explainability
+  mechanisms. Validated across 900 experiments (18 datasets × 5
+  algorithms × 10 seeds) with Friedman + Wilcoxon statistical tests.
+authors:
+  - family-names: "Benihya"
+    given-names: "Khalil"
+    affiliation: ""    # Add your institution
+    orcid: ""          # Add your ORCID
+  - family-names: "Khaled"
+    given-names: "Ahmed"
+    affiliation: ""    # Add your institution
+    orcid: ""          # Add your ORCID
+keywords:
+  - fuzzy-c-means
+  - fuzzy-clustering
+  - adaptive-parameters
+  - automatic-cluster-discovery
+  - explainable-ai
+  - unsupervised-learning
+  - data-mining
+  - high-dimensional-data
+  - machine-learning
+  - python
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Benihya"
+      given-names: "Khalil"
+    - family-names: "Khaled"
+      given-names: "Ahmed"
+  title: >-
+    ADE-FCM: An Adaptive and Explainable Fuzzy C-Means Framework
+    for Automated Clustering
+  year: 2026
+  url: "https://github.com/Whoisasimm/ADE-FCM"
+  license: MIT

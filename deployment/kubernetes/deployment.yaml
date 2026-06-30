@@ -1,0 +1,310 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ade-fcm
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ade-fcm-data-pvc
+  namespace: ade-fcm
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ade-fcm-notebooks-pvc
+  namespace: ade-fcm
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ade-fcm-mlflow-pvc
+  namespace: ade-fcm
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: standard
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-master
+  namespace: ade-fcm
+  labels:
+    app: spark
+    role: master
+    project: ade-fcm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spark
+      role: master
+  template:
+    metadata:
+      labels:
+        app: spark
+        role: master
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+    spec:
+      containers:
+        - name: spark-master
+          image: ade-fcm/spark:latest
+          imagePullPolicy: Always
+          command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master"]
+          ports:
+            - containerPort: 7077
+              name: spark
+            - containerPort: 8080
+              name: webui
+          envFrom:
+            - configMapRef:
+                name: ade-fcm-config
+          env:
+            - name: SPARK_MODE
+              value: master
+          resources:
+            requests:
+              cpu: "1"
+              memory: "2Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 5
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-worker
+  namespace: ade-fcm
+  labels:
+    app: spark
+    role: worker
+    project: ade-fcm
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spark
+      role: worker
+  template:
+    metadata:
+      labels:
+        app: spark
+        role: worker
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8081"
+    spec:
+      containers:
+        - name: spark-worker
+          image: ade-fcm/spark:latest
+          imagePullPolicy: Always
+          command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077"]
+          ports:
+            - containerPort: 8081
+              name: webui
+          envFrom:
+            - configMapRef:
+                name: ade-fcm-config
+          env:
+            - name: SPARK_MODE
+              value: worker
+            - name: SPARK_WORKER_CORES
+              value: "4"
+            - name: SPARK_WORKER_MEMORY
+              value: "8g"
+          resources:
+            requests:
+              cpu: "2"
+              memory: "4Gi"
+            limits:
+              cpu: "4"
+              memory: "8Gi"
+          volumeMounts:
+            - mountPath: /data
+              name: data-volume
+            - mountPath: /opt/ade-fcm
+              name: ade-fcm-code
+      volumes:
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: ade-fcm-data-pvc
+        - name: ade-fcm-code
+          configMap:
+            name: ade-fcm-config
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyter
+  namespace: ade-fcm
+  labels:
+    app: jupyter
+    project: ade-fcm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jupyter
+  template:
+    metadata:
+      labels:
+        app: jupyter
+    spec:
+      containers:
+        - name: jupyter
+          image: ade-fcm/jupyter:latest
+          imagePullPolicy: Always
+          command:
+            - jupyter
+            - lab
+            - "--ip=0.0.0.0"
+            - "--port=8888"
+            - "--no-browser"
+            - "--allow-root"
+            - "--NotebookApp.token=ade-fcm"
+          ports:
+            - containerPort: 8888
+          volumeMounts:
+            - mountPath: /notebooks
+              name: notebooks-volume
+            - mountPath: /data
+              name: data-volume
+          resources:
+            requests:
+              cpu: "1"
+              memory: "2Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+      volumes:
+        - name: notebooks-volume
+          persistentVolumeClaim:
+            claimName: ade-fcm-notebooks-pvc
+        - name: data-volume
+          persistentVolumeClaim:
+            claimName: ade-fcm-data-pvc
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow
+  namespace: ade-fcm
+  labels:
+    app: mlflow
+    project: ade-fcm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow
+  template:
+    metadata:
+      labels:
+        app: mlflow
+    spec:
+      containers:
+        - name: mlflow
+          image: ade-fcm/mlflow:latest
+          imagePullPolicy: Always
+          entrypoint: ["mlflow", "server"]
+          args:
+            - "--host=0.0.0.0"
+            - "--port=5000"
+            - "--backend-store-uri=postgresql://mlflow:mlflow@mlflow-db:5432/mlflow"
+            - "--default-artifact-root=s3://ade-fcm-mlflow/artifacts"
+            - "--workers=4"
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - mountPath: /data
+              name: mlflow-volume
+          resources:
+            requests:
+              cpu: "1"
+              memory: "2Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+      volumes:
+        - name: mlflow-volume
+          persistentVolumeClaim:
+            claimName: ade-fcm-mlflow-pvc
+
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: spark-worker-hpa
+  namespace: ade-fcm
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: spark-worker
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 80
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+        - type: Pods
+          value: 2
+          periodSeconds: 60
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+        - type: Pods
+          value: 1
+          periodSeconds: 120

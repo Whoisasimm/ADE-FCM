@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="h1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+    <linearGradient id="h2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="h3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#EF6C00"/>
+    </linearGradient>
+    <linearGradient id="h4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6A1B9A"/>
+      <stop offset="100%" stop-color="#7B1FA2"/>
+    </linearGradient>
+    <linearGradient id="h5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#D32F2F"/>
+    </linearGradient>
+    <linearGradient id="h6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#283593"/>
+      <stop offset="100%" stop-color="#303F9F"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowDeep">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="700" fill="url(#bg)" rx="8"/>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">ADE-FCM Architecture</text>
+
+  <!-- Row 1: Input -->
+  <rect x="450" y="60" width="200" height="60" rx="8" fill="url(#h1)" filter="url(#shadowDeep)"/>
+  <text x="550" y="86" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Input</text>
+  <text x="550" y="106" text-anchor="middle" font-size="11" fill="#e3f2fd">Dataset X (n × d)</text>
+
+  <!-- Arrow -->
+  <line x1="550" y1="120" x2="550" y2="150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: Preprocessing -->
+  <rect x="400" y="150" width="300" height="50" rx="6" fill="#e3f2fd" stroke="#1565C0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="550" y="172" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d47a1">Preprocessing</text>
+  <text x="550" y="188" text-anchor="middle" font-size="10" fill="#1565C0">StandardScaler → Nan/inf handling</text>
+
+  <line x1="550" y1="200" x2="550" y2="230" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: Core Algorithm - Main box -->
+  <rect x="130" y="230" width="840" height="220" rx="10" fill="none" stroke="#bbb" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="550" y="250" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">ADE-FCM Core Algorithm</text>
+
+  <!-- Row 3 boxes -->
+  <!-- Box 1: Init -->
+  <rect x="155" y="260" width="230" height="80" rx="8" fill="url(#h2)" filter="url(#shadow)"/>
+  <text x="270" y="285" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">1. Center Initialization</text>
+  <text x="270" y="303" text-anchor="middle" font-size="10" fill="#c8e6c9">KMeans++ | Density-based | Random</text>
+  <text x="270" y="320" text-anchor="middle" font-size="10" fill="#a5d6a7">Auto-K discovery (silhouette + penalty)</text>
+
+  <!-- Box 2: Iter -->
+  <rect x="435" y="260" width="230" height="80" rx="8" fill="url(#h3)" filter="url(#shadow)"/>
+  <text x="550" y="285" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">2. Iterative Refinement</text>
+  <text x="550" y="303" text-anchor="middle" font-size="10" fill="#ffe0b2">Adaptive fuzzifier m(t): 2.5 → 1.1</text>
+  <text x="550" y="320" text-anchor="middle" font-size="10" fill="#ffe0b2">Dynamic threshold ε(t): 10⁻³ → 10⁻⁸</text>
+
+  <!-- Box 3: Robust -->
+  <rect x="715" y="260" width="230" height="80" rx="8" fill="url(#h5)" filter="url(#shadow)"/>
+  <text x="830" y="285" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">3. Robust Updates</text>
+  <text x="830" y="303" text-anchor="middle" font-size="10" fill="#ffcdd2">Trimmed-mean center (γ = 0.05)</text>
+  <text x="830" y="320" text-anchor="middle" font-size="10" fill="#ffcdd2">Starvation re-initialization</text>
+
+  <!-- Arrows between Row 3 boxes -->
+  <line x1="385" y1="300" x2="435" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="665" y1="300" x2="715" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: bottom: Metric flex -->
+  <rect x="155" y="355" width="300" height="80" rx="8" fill="url(#h4)" filter="url(#shadow)"/>
+  <text x="305" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">4. Distance Metrics</text>
+  <text x="305" y="400" text-anchor="middle" font-size="10" fill="#e1bee7">Euclidean | Manhattan | Cosine | Mahalanobis</text>
+  <text x="305" y="418" text-anchor="middle" font-size="10" fill="#e1bee7">Auto-selection for high-dim data</text>
+
+  <rect x="505" y="355" width="200" height="80" rx="8" fill="url(#h6)" filter="url(#shadow)"/>
+  <text x="605" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">5. Convergence</text>
+  <text x="605" y="400" text-anchor="middle" font-size="10" fill="#c5cae9">Early stopping (patience = 10)</text>
+  <text x="605" y="418" text-anchor="middle" font-size="10" fill="#c5cae9">J history tracking</text>
+
+  <!-- Dashed: XAI -->
+  <rect x="755" y="355" width="190" height="80" rx="8" fill="url(#h1)" filter="url(#shadow)"/>
+  <text x="850" y="380" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">6. Explainability</text>
+  <text x="850" y="400" text-anchor="middle" font-size="10" fill="#e3f2fd">Permutation importance</text>
+  <text x="850" y="418" text-anchor="middle" font-size="10" fill="#e3f2fd">Cluster summaries</text>
+
+  <line x1="455" y1="395" x2="505" y2="395" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="705" y1="395" x2="755" y2="395" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow down -->
+  <line x1="550" y1="450" x2="550" y2="490" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 4: Output -->
+  <rect x="300" y="490" width="500" height="90" rx="8" fill="url(#h2)" filter="url(#shadowDeep)"/>
+  <text x="550" y="515" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Output</text>
+  <text x="330" y="540" font-size="10" fill="#c8e6c9">Labels (n,)  ·  Centers (k × d)  ·  U matrix (n × k)</text>
+  <text x="330" y="558" font-size="10" fill="#c8e6c9">Feature importances  ·  Cluster summaries  ·  J history</text>
+
+  <!-- Row 5: Spark (optional) -->
+  <line x1="550" y1="580" x2="550" y2="610" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <rect x="380" y="610" width="340" height="50" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="550" y="632" text-anchor="middle" font-size="11" fill="#999" font-style="italic">Spark Module (optional: pip install ade-fcm[spark])</text>
+  <text x="550" y="648" text-anchor="middle" font-size="10" fill="#aaa">RDD partitioning → Broadcast centers → MapPartitions</text>
+
+  <!-- Legend -->
+  <rect x="20" y="660" width="12" height="12" rx="2" fill="#1565C0"/>
+  <text x="36" y="670" font-size="9" fill="#555">Input/Output</text>
+  <rect x="110" y="660" width="12" height="12" rx="2" fill="#2E7D32"/>
+  <text x="126" y="670" font-size="9" fill="#555">Algorithm</text>
+  <rect x="200" y="660" width="12" height="12" rx="2" fill="#EF6C00"/>
+  <text x="216" y="670" font-size="9" fill="#555">Iteration</text>
+  <rect x="290" y="660" width="12" height="12" rx="2" fill="#D32F2F"/>
+  <text x="306" y="670" font-size="9" fill="#555">Robustness</text>
+  <rect x="395" y="660" width="12" height="12" rx="2" fill="#7B1FA2"/>
+  <text x="411" y="670" font-size="9" fill="#555">Metric</text>
+</svg>
